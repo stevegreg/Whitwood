@@ -1,23 +1,216 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JW Woodworking</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='navbar navbar-default navbar-fixed-top'>
+      <div class='container'>
+        <div class="navbar-header">
+          <a href='index.html' class='navbar-brand'>JW Bar Rentals</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+          <li><a href='rentals.html'>Rentals</a></li>
+          <li><a href='gallery.html'>Gallery</a></li>
+          <li><a href='about.html'>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row well well-lg'>
+        <div class='col-md-5'>
+          <h2>Authentic, Customizable Bars</h2>
+          <p class='lead'>Make your next event unique with these bars. Each bar comes with a customizable sign and tap handles.</p>
+          <button type='button' class='btn btn-lg btn-default'>View the Gallery</button>
+          <button type='button' class='btn btn-lg btn-primary'>Rent Now</button>
+        </div>
+        <div class='col-md-7 visible-md visible-lg'>
+          <img src='images/img-header.png' alt='Wooden Beer Bar' />
+        </div>
+      </div>
 
-<div class="home">
+      <div class='row text-center features'>
+        <div class='col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0'>
+          <i class='glyphicon glyphicon-briefcase'></i>
+          <h3>Rent Today!</h3>
+          <p>Please book your bar 2 months in adavnce to insure availability.</p>
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
+        <div class='col-sm-4 col-xs-6'>
+          <i class='glyphicon glyphicon glyphicon-road'></i>
+          <h3>Delivery</h3>
+          <p>Pickup and delivery services available within Nothern Orange County and Long Beach.</p>
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class='col-sm-4 col-xs-6'>
+          <i class='glyphicon glyphicon-tree-conifer'></i>
+          <h3>Sustainable</h3>
+          <p>All bars made from recycle or reclaimed wood.</p>
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <div class='container'>
+          <blockquote>
+            <p>Europeans are much more serious than we are in America because they think that a good place to discuss intellectual matters is a beer party.</p>
+            <footer>Richard P. Feynman</footer>
+          </blockquote>
+        </div>
+      </div>
+    <div class='container transport-systems'>
+      <div class='row'>
+        <div class='col-md-10 col-md-offset-1'>
+          <h2>Our Bar Sizes</h2>
+          <p>Learn more about our bar systems to find out which one is right for you. Pick out the bar that works for your budget and event size.</p>
+        </div>
+      </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <div class='row text-center'>
+        <div class='col-md-3 col-md-offset-1 well well-sm'>
+          <h3>3 Tap</h3>
+          <ul class='list-unstyled'>
+            <li>Choice of 3 different beers</li>
+            <li>Good for events of 150 for 5/6 hours</li>
+            <li>Low price of only $600</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-calendar'></i> Rent Now!</button></p>
+        </div>
+        <div class='col-md-3 col-md-offset-1 well well-sm'>
+          <h3>4 Tap</h3>
+          <ul class='list-unstyled'>
+            <li>Choice of 4 different beers</li>
+            <li>Good for 200 for 5/6 hours</li>
+            <li>Only $675 if you book today!</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-calendar'></i> Rent Now!</button></p>
+        </div>
+        <div class='col-md-3 col-md-offset-1 well well-sm'>
+          <h3>Custom Solution</h3>
+          <ul class='list-unstyled'>
+            <li>Designed how to like!</li>
+            <li>You pick the taps, the wood, the lighting, the stain!</li>
+          </ul>
+          <p><button class='btn btn-info'><i class='glyphicon glyphicon-envelope'></i> Contact Us!</button></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--<div class='container'>
+      <div class='row'>
+        <br>
+        <div class='col-md-3 col-md-offset-1'>
+          <div class='panel-group'>
+            <div class='panel panel-success'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a data-toggle='collapse' data-parent='.panel-group' href='#systemsOperational'>All Systems Operational</a>
+                </h4>
+              </div>
+              <div id='systemsOperational' class='panel-collapse collapse in'>
+                <div class='panel-body'>
+                  <p>All systems are operational</p>
+                  <ul class='list-unstyled'>
+                    <li><i class='glyphicon glyphicon-ok'></i>  Transporters</li>
+                    <li><i class='glyphicon glyphicon-ok'></i>  Space Elevator</li>
+                    <li><i class='glyphicon glyphicon-ok'></i>  RocketBus</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <div class='panel panel-warning'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a data-toggle='collapse' data-parent='.panel-group' href='#weatherAlert'>Weather Alert</a>
+                </h4>
+              </div>
+              <div id='weatherAlert' class='panel-collapse collapse'>
+                <div class='panel-body'>
+                  <p>The National Weather Service has issued a solar flare watch for the following time periods. Please plan accordingly:</p>
+                  <ul class='list-unstyled'>
+                    <li><strong>February 9th, 21:43</strong></li>
+                    <li><strong>May 18, 19:82</strong></li>
+                    <li><strong>July 4, 08:42</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-</div>
+            <div class='panel panel-danger'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a data-toggle='collapse' data-parent='.panel-group' href='#transportationWarning'>Transportation Generals Warning: Transporters</a>
+                </h4>
+              </div>
+              <div id='transportationWarning' class='panel-collapse collapse'>
+                <div class='panel-body'>
+                  <p>Technically, transporting means making a clone of yourself and killing off the other one. If you believe in a soul, you should be aware of this fact before attempting travel using a transporter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-3 col-sm-4 col-xs-6'>
+            <h4>Who We Are</h4>
+            <p><i>A guy that loves making things!</i></p>
+            <p><a href='about.html'>More About Us <i class='glyphicon glyphicon-arrow-right'></i></a></p>
+          </div>
+
+          <div class='col-md-offset-1 col-sm-2 col-xs-6'>
+            <h4>Links</h4>
+            <ul class='list-unstyled'>
+              <li><a href='/'>Home</a></li>
+              <li><a href='rentals.html'>Rentals</a></li>
+              <li><a href='gallery.html'>Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class='clearfix visible-xs'></div>
+
+          <div class='col-sm-2 col-xs-6'>
+            <h4>Stay in Touch</h4>
+            <ul class='list-unstyled'>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='contact.html'>Contact Us</a></li>
+              <li><a href='http://facebook.com/'>Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class='col-md-3 col-md-offset-1 col-sm-4 col-xs-6'>
+            <h4>Contact Us</h4>
+            <ul class='list-unstyled'>
+              <li><i class='glyphicon glyphicon-globe'></i>Fountain Valley, CA</li>
+              <li><i class='glyphicon glyphicon-phone'></i> 1-800-123-4567</li>
+              <li><i class='glyphicon glyphicon-envelope'></i> <a href='mailto:stevegreg@gmail.com'>stevegreg@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script>
+      $(function() {
+        $('.nav-tabs a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+      });
+    </script>
+  </body>
+</html>
