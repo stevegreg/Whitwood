@@ -1,0 +1,26 @@
+.footer {
+  background-color: #333;
+  color: #efefef;
+}
+
+ .footer a {
+   color:#9af7fe;
+ }
+
+ .features .glyphicon {
+  font-size: 32pt;
+ }
+
+ body {
+   padding-top: 70px;
+ }
+
+.quote blockquote {
+  border: none;
+  margin: 0;
+}
+
+.quote {
+  background-color: #444;
+  color: #e1e1e1;
+}
